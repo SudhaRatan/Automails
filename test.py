@@ -23,10 +23,8 @@ s = smtplib.SMTP('smtp.gmail.com',587 )
 
 # start TLS for security
 s.starttls()
-
-fromaddr = 'rattankumar2511@gmail.com'
-# Authentication
-s.login(fromaddr, "vlutqmwwstibjzmc")
+fromaddr = ''  #Your/Sender's gmail address
+s.login(fromaddr, "")  # Your authentication id for less secure apps
 
 f=open(r"E:\xampp\htdocs\deptform\scripts\email\mails.txt")  #add the the mails in a text file and attach it using relative or absolute path
 ff=open(r"E:\xampp\htdocs\deptform\scripts\email\names.txt") #add the names in a text file and attach it using relative or absolute path in the same order as mail
